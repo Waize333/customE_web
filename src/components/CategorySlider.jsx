@@ -8,20 +8,24 @@ const CategorySlider = () => {
   const scrollToCategory = (categoryName) => {
     const categorySection = document.getElementById(categoryName);
     if (categorySection) {
-      categorySection.scrollIntoView({ behavior: "smooth", block: "start" });
+      categorySection.scrollIntoView({ behavior: "smooth"});
     }
   };
 
   return (
     <div className="overflow-hidden w-[60%] mx-auto py-4 relative">
       <motion.div
-        className="flex gap-6"
-        animate={{ x: ["0%", "-100%"] }}
+        className="flex gap-4 snap-x snap-mandatory"
+        initial={{ x: "0%" }}
+        animate={{ x: "-100%" }}
         transition={{
           ease: "linear",
-          duration: 15, // Slower speed
+          duration: 30,
           repeat: Infinity,
         }}
+        exit={{ x: "0%" }}
+        // This will make the animation loop back to the start
+  
       >
         {extendedCategories.map((category, index) => (
           <motion.button
