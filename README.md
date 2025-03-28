@@ -1,4 +1,4 @@
-# 🚀 FrameWork for E-Custom-Websites Using Vite  
+# FrameWork for E-Custom-Websites Using Vite  
 
 This framework is designed to create **custom single-page e-commerce websites** with React, Vite, Zustand for state management, and Firebase for backend integration.  
 
@@ -78,15 +78,15 @@ Stores images, icons, and other static assets.
 
 ## **🛠 Technologies Used**  
 
-- ⚡ **Vite** → Fast React framework  
-- 🎨 **Tailwind CSS** → For styling  
-- 🔥 **Firebase** → Backend authentication and database  
-- 🛒 **Zustand** → Lightweight state management  
-- 🌐 **React Router** → Client-side routing  
+-  **Vite** → Fast React framework  
+-  **Tailwind CSS** → For styling  
+-  **Firebase** → Backend authentication and database  
+-  **Zustand** → Lightweight state management  
+-  **React Router** → Client-side routing  
 
 ---
 
-## **📌 How State Management Works (Zustand)**  
+## ** How State Management Works (Zustand)**  
 
 **cartStore.js - Global State Example**  
 
